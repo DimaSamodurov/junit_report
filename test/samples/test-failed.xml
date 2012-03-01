@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Login/Logout with credentials" skipped="0" tests="5" time="16.328231">
+<testcase classname="Login/Logout with credentials.Logout" name="Logout" time="3.679872">
+</testcase>
+<testcase classname="Login/Logout with credentials.Login" name="Login" time="0.336143">
+  <failure message="failed Login" type="failed">
+    <![CDATA[Scenario: Login
+
+Given ...:
+
+Message:
+]]>
+    <![CDATA[expected: "/"
+     got: "/login" (using ==) (RSpec::Expectations::ExpectationNotMetError)
+./features/step_definitions/web_steps.rb:in `/^(?:|I )should be on (.+)$/'
+features/acceptance_features/credentials.feature:27:in `Then I should be on the homepage']]>
+  </failure>
+</testcase>
+<testcase classname="Login/Logout with credentials.Login with invalid password" name="Login with invalid password" time="0.415679">
+</testcase>
+<testcase classname="Login/Logout with credentials.Login with non existing user id" name="Login with non existing user id" time="0.391010">
+</testcase>
+<testcase classname="Login/Logout with credentials.Redirect to target page accessed before the login" name="Redirect to target page accessed before the login" time="11.505527">
+</testcase>
+</testsuite>

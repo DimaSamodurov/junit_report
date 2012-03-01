@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <style type='text/css'>
+      /*<![CDATA[*/
+        /* Style from http://coding.smashingmagazine.com/2008/08/13/top-10-css-table-designs/ */
+        .one-column-emphasis{
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+            font-size: 12px;
+            margin: 45px;
+            width: 480px;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        .one-column-emphasis th{
+            font-size: 14px;
+            font-weight: normal;
+            padding: 12px 15px;
+            color: #039;
+        }
+        .one-column-emphasis td{
+            padding: 10px 15px;
+            color: #669;
+            border-top: 1px solid #e8edff;
+        }
+        
+        .one-column-emphasis td ul li{
+            display: inline;
+        }
+        
+        .one-column-emphasis tr:hover td  {
+            color: #339;
+            background: #eff2ff;
+        }
+        
+        .name{
+            min-width: 300px;
+        }
+        
+        
+        .one-column-emphasis td.fail{
+            color: red;
+        }
+        .one-column-emphasis td.success{
+            color: #9acd32;
+        }
+      /*]]>*/
+    </style>
+  </head>
+  <body>
+    <table class='one-column-emphasis'>
+      <tr>
+        <th>name</th>
+        <th>tests</th>
+        <th>errors</th>
+        <th>failures</th>
+        <th>skipped</th>
+        <th>time</th>
+      </tr>
+      <tr>
+        <td>Login/Logout with credentials</td>
+        <td>4</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3.032166</td>
+      </tr>
+      <tr>
+        <td class='success' colspan='6'>
+          <ul>
+            <li class='name'>Logout</li>
+            <li class='status'>Success</li>
+          </ul>
+        </td>
+        <td class='success' colspan='6'>
+          <ul>
+            <li class='name'>Login</li>
+            <li class='status'>Success</li>
+          </ul>
+        </td>
+        <td class='success' colspan='6'>
+          <ul>
+            <li class='name'>Login with invalid password</li>
+            <li class='status'>Success</li>
+          </ul>
+        </td>
+        <td class='success' colspan='6'>
+          <ul>
+            <li class='name'>Login with non existing user id</li>
+            <li class='status'>Success</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Login/Logout with credentials</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>16.328231</td>
+      </tr>
+      <tr>
+        <td class='success' colspan='6'>
+          <ul>
+            <li class='name'>Logout</li>
+            <li class='status'>Success</li>
+          </ul>
+        </td>
+        <td class='fail' colspan='6'>
+          <ul>
+            <li class='name'>Login</li>
+            <li class='status'>Fail</li>
+          </ul>
+        </td>
+        <td class='success' colspan='6'>
+          <ul>
+            <li class='name'>Login with invalid password</li>
+            <li class='status'>Success</li>
+          </ul>
+        </td>
+        <td class='success' colspan='6'>
+          <ul>
+            <li class='name'>Login with non existing user id</li>
+            <li class='status'>Success</li>
+          </ul>
+        </td>
+        <td class='success' colspan='6'>
+          <ul>
+            <li class='name'>Redirect to target page accessed before the login</li>
+            <li class='status'>Success</li>
+          </ul>
+        </td>
+      </tr>
+      <tr class='total'>
+        <td>Total</td>
+        <td>9</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>19.360397</td>
+      </tr>
+    </table>
+  </body>
+</html>

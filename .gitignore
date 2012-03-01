@@ -1,0 +1,16 @@
+*.gem
+.bundle
+Gemfile.lock
+pkg/*
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+*.swo
+*.md.html
+
+## development files
+.idea/*

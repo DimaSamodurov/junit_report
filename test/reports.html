@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <th>name</th>
+    <th>errors</th>
+    <th>failures</th>
+    <th>skipped</th>
+    <th>tests</th>
+    <th>time</th>
+    <th>testcases</th>
+  </tr>
+  <tr>
+    <td>Login/Logout with credentials</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>5</td>
+    <td>16.328231</td>
+    <td>[#<JunitReport::TestCase:0x00000001ce3938 @name="Logout", @time=3.679872>, #<JunitReport::TestCase:0x00000001ce5a30 @name="Login", @time=0.336143, @failure=#<JunitReport::Failure:0x00000001dc11e8 @message="failed Login", @type="failed", @errors=["Scenario: Login\n\nGiven the following user exists:\nAnd the following passwords revealed:\nGiven I am not logged in\nWhen I go to the login page\nAnd I fill in \"User\" with \"D038720\"\nAnd I fill in \"Password\" with \"1234\"\nAnd I press \"Login\"\nThen I should be on the homepage\nAnd I should see \"My Profile\"\n\nMessage:\n", "expected: \"/\"\n     got: \"/login\" (using ==) (RSpec::Expectations::ExpectationNotMetError)\n./features/step_definitions/web_steps.rb:191:in `/^(?:|I )should be on (.+)$/'\nfeatures/acceptance_features/authentication/credentials.feature:27:in `Then I should be on the homepage'"]>>, #<JunitReport::TestCase:0x00000001dbe4c0 @name="Login with invalid password", @time=0.415679>, #<JunitReport::TestCase:0x00000002297c08 @name="Login with non existing user id", @time=0.39101>, #<JunitReport::TestCase:0x00000002297028 @name="Redirect to target page accessed before the login", @time=11.505527>]</td>
+  </tr>
+</table>

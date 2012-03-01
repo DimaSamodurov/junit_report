@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="Login/Logout with credentials" skipped="0" tests="4" time="3.032166">
+<testcase classname="Login/Logout with credentials.Logout" name="Logout" time="2.204602">
+</testcase>
+<testcase classname="Login/Logout with credentials.Login" name="Login" time="0.248307">
+</testcase>
+<testcase classname="Login/Logout with credentials.Login with invalid password" name="Login with invalid password" time="0.333415">
+</testcase>
+<testcase classname="Login/Logout with credentials.Login with non existing user id" name="Login with non existing user id" time="0.245842">
+</testcase>
+</testsuite>

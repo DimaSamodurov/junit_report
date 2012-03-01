@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    :css
+      #{style}
+  %body
+    %h1 Test execution report
+    %table.one-column-emphasis
+      %tr
+        - %w(feature tests errors failures skipped time).each do |key|
+          %th=key.capitalize
+
+      - testsuite_attributes = %w(name tests errors failures skipped time)
+      - reports.each do |testsuite|
+        %tr
+          - testsuite_attributes.each do |key|
+            %td=testsuite[key]
+        - testsuite.testcases.each do |testcase|
+          %tr
+            %td{colspan: testsuite_attributes.size, class: testcase.failure.nil? ? 'success' : 'fail'}
+              %ul
+                %li.name= testcase.name
+      %tr.total
+        %td Total
+        - %w(tests errors failures skipped time).each do |metric|
+          %td= stats.sum(metric)
